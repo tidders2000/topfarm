@@ -51,9 +51,7 @@ button:hover{
   background-color: #F58B2F;
 }
 
-img{
-  padding:10%;
-}
+
 
 /*.................Nav........................*/
 
@@ -72,7 +70,7 @@ nav {
 /*coloured fill for contacts page*/
 
 .nav_bg {
-  background-color: #5e44e3;
+  background-color: #C8E344;
 }
 
 
@@ -83,7 +81,7 @@ nav {
 
 
 
-/*.................text-block-one........................*/
+/*.................text-block........................*/
 
 .text_block {
   background-image: url(../images/whitebg.jpg);
@@ -102,10 +100,14 @@ nav {
 }
 
 .text-img{
-  margin-top: 10%;
+  margin-top: 15%;
+  margin-bottom: 15px;
 }
 
-
+.image-spacer img{
+  padding: 5%;
+  margin-top: 10%;
+}
 /*.................hero-image-two........................*/
 
 .hero-image-two {

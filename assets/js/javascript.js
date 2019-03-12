@@ -1,14 +1,15 @@
+$(document).ready(function() {
+  $('.sidenav').sidenav();
 
-  $(document).ready(function(){
-    $('.sidenav').sidenav();
-    
- 
- 
- 
-    $('.slider').slider({
-      height: 700,
-      indicators: false
-    });
+  $('.tooltipped').tooltip();
 
+
+  $('.slider').slider({
+    height: 700,
+    indicators: false
+  });
+  $('.test').mouseenter(function() {
+    $(this).effect("shake");
+  });
 
 })
