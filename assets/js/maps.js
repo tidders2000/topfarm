@@ -6,7 +6,7 @@
                     lng: -0.643753
                 }
             });
-            var labels = "ABCDEFGHIJKLMONPQRSTUVWXYZ";
+            var labels = "Top Farm";
             var locations = [{
                 
                 lat:  52.8421196,
@@ -15,7 +15,7 @@
             var markers = locations.map(function(location, i) {
                 return new google.maps.Marker({
                     position: location,
-                    label: labels[i % labels.length]
+                    label: labels
                 });
             });
             var markerCluster = new MarkerClusterer(map, markers, {

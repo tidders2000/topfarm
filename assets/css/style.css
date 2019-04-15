@@ -5,13 +5,13 @@ html {
   padding-top: 0;
   margin: 0;
   height: 100%;
-
-
+  
 }
 
-.row{
-  padding:0;
-  margin:0;
+
+.row {
+  padding: 0;
+  margin: 0;
 }
 
 
@@ -21,19 +21,26 @@ html {
 
 }
 
-h1, h3 {
+h1,
+h3, h5 {
   color: #855C19;
   font-family: PT Sans, sans-serif;
+  font-weight: 400;
+  text-align: center;
 }
 
-h5{
-  color:#2699FB;
+h1{
+  font-size: 55px;
+}
+
+h5 {
+  color: #2699FB;
 }
 
 p {
   font-family: sana, sans-serif;
-  font-size: 2em;
-
+  font-size:2em;
+ 
 }
 
 button {
@@ -47,8 +54,11 @@ button {
   cursor: pointer;
 }
 
-button:hover{
+button:hover {
   background-color: #F58B2F;
+}
+
+ .animated{  z-index: -1;
 }
 
 
@@ -62,22 +72,37 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 0;
+  z-index: 1;
+
 }
-.slider{
-  z-index: -1;
-}
+
 /*coloured fill for contacts page*/
 
 .nav_bg {
   background-color: #C8E344;
+  padding-left:5px;
 }
 
-
-.slider-p{
-  color:#5e44e3;
+.logo {
+  color: #855C19;
+ 
 }
 
+/*....................slider...................*/
+
+.sliderPara {
+  color: #855C19;
+}
+
+.slider {
+  z-index: -1;
+  
+}
+
+.slides li{
+   background: 
+    linear-gradient( blue);
+}
 
 
 
@@ -85,44 +110,70 @@ nav {
 
 .text_block {
   background-image: url(../images/whitebg.jpg);
-  height: 400px;
-  
+ height:500px;
+
+
+ 
+
 }
 
-.text-para{
+.text-para {
   font-size: medium;
-  padding: 5% 5% 5% 5%;
-  color:#F58B2F;
+  padding-bottom: 50px;
+  color: #F58B2F;
+  font-size: 20px;
+  line-height: 1.6;
 }
 
-.text-heading{
+.text-heading {
   text-align: center;
 }
 
-.text-img{
-  margin-top: 15%;
-  margin-bottom: 15px;
+.text-img {
+  display: block;
+  margin: auto;
+  margin-top: 7%;
 }
 
-.image-spacer img{
-  padding: 5%;
-  margin-top: 10%;
+.text-img-multi {
+
+  display: block;
+  margin: auto;
+  width: auto;
+ padding-bottom: 20px;
+ padding-top: 20px;
+
 }
+
+.multi-image-holder{
+  background: linear-gradient(to bottom, #c8e344 10%, #669999 63%);
+}
+
+
+
+.icon-holder{
+
+margin-bottom: 10%;
+text-align:center;
+}
+
+
 /*.................hero-image-two........................*/
 
 .hero-image-two {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/sunset.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/sunset.jpg");
 
   /* Set a specific height */
   height: 800px;
-
+ 
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-z-index: -1;
+
+
 }
 
 /* Place text in the middle of the image */
@@ -133,16 +184,15 @@ z-index: -1;
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
+  color: #855C19;
 }
-
 
 
 /*.................hero-image-three........................*/
 
 .hero-image-three {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/inside-marquee.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/inside-marquee.jpg");
 
   /* Set a specific height */
   height: 800px;
@@ -160,28 +210,113 @@ z-index: -1;
 .hero-text-three {
   text-align: center;
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
+  color: #855C19;
 }
 
-#map {
-  height: 400px;
+*#map{
+  display:block;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom:20px;
+ width: 90%;
+  height:400px;
+  z-index: 0;
+  
 }
+
+.map-holder{
+    background-color: #c8e344;
+  padding-top: 20px;
+  padding-bottom:20px;
+}
+
 /* .........footer............. */
-footer{
- padding-top:50px;
+
+footer {
+  padding-top: 50px;
   height: 400px;
   text-align: center;
   background: linear-gradient(to bottom, #c8e344 5%, #669999 83%);
 }
-.fab{
-  color:#2699FB;
+ footer button{
+   background-color: #2699FB;
+ }
+.fab {
+  color: #2699FB;
   height: 20px;
-  padding:10px;
+  padding: 10px;
   cursor: pointer;
 }
- .fab:hover{
-   color: #ffffff;
- }
+
+.fab:hover {
+  color: #F58B2F;
+}
+
+/*..............contact form...................*/
+
+.prefix {
+  color: #C8E344;
+}
+
+.modal-header {
+  color: #C8E344;
+}
+
+/*.............supliers...................*/
+
+.card {
+  z-index: -1;
+}
+
+.gap {
+  margin-top: 70px;
+}
+
+.center-img {
+  display: block;
+  margin: auto;
+  width: auto;
+}
+
+/*.............media queries...................*/
+
+@media only screen and (max-width: 769px) {
+  .text-img {
+    padding: 10px;
+    margin-top: 20%;
+  }
+  
+  .icon-holder{
+    margin-top: 15%;
+  }
+  
+  
+}
+
+@media only screen and (min-width: 1000px) {
+  .icon-holder {
+   margin-top:5%;
+  }
+}
+
+@media only screen and (max-width: 321px) {
+  .icon-holder {
+   margin-top:0;
+   padding-bottom:40px; 
+  
+   
+  }
+  .text_block{
+    height:590px;
+  }
+}
+
+/*.............spacing for icons...................*/
+.tip{
+
+  margin-bottom: 10px;
+}
+

@@ -8,11 +8,20 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Farm Wedding venue</title>
 	<!-- Compiled and minified CSS -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" />
 	<link rel="stylesheet" href="./assets/css/jquery-ui.min.css" type="text/css" />
+	<link rel="stylesheet" href="./assets/css/animations.css" type="text/css" />
 	<link rel="stylesheet" href="./assets/css/style.css" type="text/css" />
+	<script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+
+	<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+	<script type="text/javascript">
+		(function() {
+			emailjs.init("user_0lBHAUSVc18wA9j4fk6kg");
+		})();
+	</script>
 </head>
 
 <body>
@@ -25,7 +34,7 @@
 			<ul class="right hide-on-med-and-down">
 				<li><a href="index.html" class="uppercase">Home</a></li>
 				<li><a href="suppliers.html" class="uppercase">Suppliers</a></li>
-				<li><a href="" class="uppercase">Contact</a></li>
+				<li><a class="uppercase modal-trigger " href="#modal1">Contact</a></li>
 
 			</ul>
 		</div>
@@ -34,7 +43,7 @@
 	<ul class="sidenav" id="mobile-demo">
 		<li><a href="index.html" class="uppercase">Home</a></li>
 		<li><a href="suppliers.html" class="uppercase">Suppliers</a></li>
-		<li><a href="" class="uppercase">Contact</a></li>
+		<li><a href="#modal1" class="uppercase modal-trigger">Contact</a></li>
 
 	</ul>
 	<!-- slider hero image -->
@@ -44,20 +53,19 @@
 		<ul class="slides">
 			<li>
 
-				<img src="assets/images/views.jpg">
+				<img src="assets/images/views2.jpg">
 				<!-- random image -->
 				<div class="caption center-align">
-					<h1 class="uppercase">TOP FARM WEDDING VENUE</h1>
-					<p class="slider-p" >Outdoor rustic wedding venue<br> in
-										the beautiful Vale of Belovir</p>
+					<h1 class="uppercase white-text">TOP FARM WEDDING FIELD</h1>
+					<p class="white-text ">Outdoor rustic wedding venue<br> in the beautiful vale of Belovir</p>
 				</div>
 			</li>
 			<li>
-				<img src="assets/images/inside_tables.jpg">
+				<img src="assets/images/marquee2.jpg" alt="wedding marquee">
 				<!-- random image -->
-				<div class="caption left-align">
-					<h1 class="uppercase">A beautiful Location</h1>
-					<p class="slider-p">Transformed to your dream wedding location</p>
+				<div class="caption center-align">
+					<h1 class="uppercase white-text">Your Dream Wedding Venue</h1>
+					
 				</div>
 			</li>
 
@@ -72,29 +80,34 @@
 
 	<div class="row">
 		<div class="col s12 text_block">
+			<h3 class="uppercase text-heading">An unusual wedding venue</h3>
 			<div class="col s12 offset-m1 m5 ">
 
-				<h3 class="uppercase text-heading">Test Heading</h3>
+				
 
-				<p class="text-para valign-wrapper">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip
-					ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum .
+				<p class="text-para valign-wrapper">
+					Top farm is a working sheep and arable farm based in the vale of Belvoir. We have some amazing views of the vale. We provide the venue but the rest is up to you, have a festival wedding, a teepee or whatever your dream day requires. We can recommend suppliers or you can choose your own. We only provide the location and what a location it is.
 				</p>
 
 			</div>
-			<div class="col s12 m5  offset-m1 ">
-			<img src="assets/images/indoorpic.jpg" class="text-img" alt="Inside marquee"></img>
+			<div class="col s12 m5  hide-on-small-only ">
+				<img src="assets/images/indoorpic.jpg" class="text-img" alt="Inside marquee"></img>
 			</div>
 		</div>
 	</div>
 
 	<!--second hero image  -->
 	<div class="row">
-		<div class="hero-image-two">
+		<div class="animatedParent">
+			<div class="animated fadeInLeft">
+				<div class="hero-image-two lazy" data-src="assets/images/sunset.jpg">
 
-			<div class="hero-text-two">
-				<h1>Amazing Views</h1>
-				<p>“Romantic and Welcoming”<br> A Great Wedding Spot</p>
+					<div class="hero-text-two">
+						<h1>Amazing Views</h1>
+						<p class='text-white'>“Romantic and Welcoming”</p>
 
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -102,16 +115,20 @@
 	<!--second text block -->
 	<div class="row">
 		<div class="col s12 text_block">
-			<div class="col s12 offset-m1 m5 ">
+				<h3 class="uppercase text-heading">Music, Drink, Laughter</h3>
+				
+				<h5>Your wedding, Your way</h5>
+				<div class="col s12 offset-m1 m5 ">
 
-				<h3 class="uppercase text-heading">Test Heading</h3>
-
-				<p class="text-para valign-wrapper">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip
-					ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum .
+			
+				<p class="text-para valign-wrapper"> 
+				
+Every wedding we have been proud to host has been different. From A La Carte to Burger vans or Discos to an Orchestra.
+You can design the perfect day anyway you like. We only supply the field so you can be creative as you like.
 				</p>
 
 			</div>
-			<div class="col s12 m5  offset-m1 ">
+			<div class="col s12 m5 hide-on-small-only  ">
 				<img src="assets/images/tent-bedroom.jpg" class="text-img" alt="Inside a tent"></img>
 			</div>
 		</div>
@@ -119,31 +136,37 @@
 
 	<!--third hero image  -->
 	<div class="row">
-		<div class="hero-image-three">
-			<div class="hero-text-three">
-				<h1>A Truly Special Venue</h1>
-				<p>“Dreams can come true!”</p>
+		<div class="animatedParent">
+			<div class="animated fadeInLeft">
+				<div class="hero-image-three lazy" data-src="assets/images/inside-marquee.jpg">
+					<div class="hero-text-three">
 
+						<h1>A Truly Special Venue</h1>
+						<p>“Dreams can come true!”</p>
+
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-
 	<!--multi small image block  -->
-	
-	<div class="row">
-		<div class="col s12 m6 l3">
-		 	<img src="assets/images/board.jpg" alt="sign board" class="text-img"></img>
-	    </div>
-	    <div class="col s12 m6 l3">
-			<img src="assets/images/inside-tent.jpg" alt="inside a accomodation tent" class="text-img"></img>
+	<div class="animatedParent">
+		<div class="animated  fadeInLeft">
+			<div class="row hide-on-small-only multi-image-holder">
+				<div class="col s12 m6 l3">
+					<img data-src="assets/images/board.jpg" alt="sign board" class="text-img-multi lazy"></img>
+				</div>
+				<div class="col s12 m6 l3">
+					<img data-src="assets/images/inside-tent.jpg" alt="inside a accomodation tent" class="text-img-multi lazy"></img>
+				</div>
+				<div class="col s12 m6 l3 ">
+					<img data-src="assets/images/accomodation-tents.jpg" alt="accomodation tents" class="text-img-multi lazy"></img>
+				</div>
+				<div class="col s12 m6 l3 ">
+					<img data-src="assets/images/marquee-inside-door.jpg" alt "looking ut of marquee door" class="text-img-multi lazy"></img>
+				</div>
+			</div>
 		</div>
-		<div class="col s12 m6 l3 ">
-			<img src="assets/images/accomodation-tents.jpg" alt="accomodation tents" class="text-img"></img>
-		</div>
-		<div class="col s12 m6 l3 ">
-			<img src="assets/images/marquee-inside-door.jpg" alt"looking ut of marquee door" class="text-img"></img>
-		</div>
-
 	</div>
 
 	<!--third text block -->
@@ -151,30 +174,28 @@
 
 
 	<div class="row">
+		
 		<div class="col s12 text_block">
-			<div class="col s12 offset-m1 m5 ">
+				<h3 class="uppercase text-heading">Suppliers</h3>
+			<div class="col s12  icon-holder">
 
-				<h3 class="uppercase text-heading">Test Heading</h3>
 
-				<p class="text-para valign-wrapper">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip
-					ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum .
+				<div class=" col  s6 l3 tip">
+					<a href="suppliers.html" class="tooltipped" data-position="bottom" data-tooltip="Wedding Planners"><img src="https://img.icons8.com/ios/100/000000/user.png" class="shake" alt="weddingplanner link"></img></a>
+				</div>
 
-			</div>
-			<div class="col s12 m5  offset-m1 ">
-				
-				
-						<div class="test col s6 image-spacer">
-							<a href="" class="tooltipped" data-position="bottom" data-tooltip="Wedding Planners"><img src="https://img.icons8.com/ios/100/000000/user.png"></img></a>
-						</div>
-				
-					<div class="test col s6 image-spacer">
-							<a href=""class="tooltipped" data-position="bottom" data-tooltip="Marquee"><img src="https://img.icons8.com/ios/100/000000/circus-tent.png"></img></a>
-					</div>
-				
-				
-					<div class="test col s6 image-spacer"><a href=""class="tooltipped" data-position="bottom" data-tooltip="Entertainment"><img src="https://img.icons8.com/ios/100/000000/theatre-mask.png"></img></a></div>
-					<div class="test col s6 image-spacer"><a href=""class="tooltipped" data-position="bottom" data-tooltip="Caterers"><img src="https://img.icons8.com/ios/100/000000/food.png"></img></a></div>
-				
+				<div class=" col s6 l3 tip">
+					<a href="suppliers.html" class="tooltipped" data-position="bottom" data-tooltip="Marquee"><img src="https://img.icons8.com/ios/100/000000/circus-tent.png" class="shake" alt="marquee hire link"></img></a>
+				</div>
+
+
+				<div class=" col s6 l3  tip">
+					<a href="suppliers.html" class="tooltipped" data-position="bottom" data-tooltip="Entertainment"><img src="https://img.icons8.com/ios/100/000000/theatre-mask.png" class="shake" alt="entertainment link"></img></a>
+				</div>
+				<div class=" col s6 l3 tip ">
+					<a href="suppliers.html" class="tooltipped" data-position="bottom" data-tooltip="Caterers"><img src="https://img.icons8.com/ios/100/000000/food.png" class="shake" alt="caterers link"></img></a>
+				</div>
+
 			</div>
 		</div>
 	</div>
@@ -182,27 +203,73 @@
 
 
 	<!--map block -->
-	<div class="row">
-		<div id="map"></div>
+
+	<div>
+		<div class="map-holder">
+			<div id="map"></div>
+		</div>
 	</div>
+
 	<!--footer -->
 	<footer>
 		<div class="container">
 			<div class="row">
-				<div class="col l12">
-				<h5>If you would like <br>more information</h5>
+				<div class="col s12">
+					<h5>If you would like <br>more information</h5>
 				</div>
-				<div class="col l12">
-					<button>Contact</button>
+				<div class="col s12">
+					<button data-target="modal1" class="modal-trigger">Contact</button>
 				</div>
-				<div class="col l12">
-					<i class="fab fa-facebook fa-5x"></i>
-					<i class="fab fa-instagram fa-5x"></i>
+				<div class="col s12">
+					<a href="https://en-gb.facebook.com/topfarmweddingvenue/"><i class="fab fa-facebook fa-5x"></i></a>
+					<a href="https://inkphy.com/user/topfarmweddingvenue"><i class="fab fa-instagram fa-5x"></i></a>
 				</div>
 
 			</div>
 		</div>
 	</footer>
+	<!-- Modal -->
+	<div id="modal1" class="modal">
+		<div class="modal-content">
+			<h4 class="modal-header">Contact Us</h4>
+
+
+			<div class="row">
+				<form class="col s12 m12" onsubmit="return sendMail(this);">
+					<div class="row">
+						<div class="input-field col s12 m6">
+							<i class="material-icons prefix">account_circle</i>
+							<input id="fullname" name="name" type="text" class="validate">
+							<label for="icon_prefix">Name</label>
+						</div>
+						<div class="input-field col s12 m6">
+							<i class="material-icons prefix">phone</i>
+							<input id="icon_telephone" type="tel" class="validate">
+							<label for="icon_telephone">Telephone</label>
+						</div>
+
+						<div class="input-field col s12 m6">
+							<i class="material-icons prefix">email</i>
+							<input id="emailaddress" name="emailaddress" type="email" class="validate">
+							<label for="email">Email</label>
+						</div>
+
+						<div class="input-field col s12 m6">
+							<i class="material-icons prefix">mode_edit</i>
+							<textarea id="projectsummary" name="projectsummary" class="materialize-textarea"></textarea>
+							<label for="textarea1">Textarea</label>
+						</div>
+					</div>
+					<button type="submit">Submit<i class="material-icons right">send</i></button>
+				</form>
+			</div>
+
+
+		</div>
+		<div class="modal-footer">
+
+		</div>
+	</div>
 
 	<!--map js/materialise/jquery and js link -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -211,9 +278,13 @@
 	<script type="text/javascript" src="./assets/js/javascript.js"></script>
 	<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDHHyac2SiOYPNYxXMK7rqJjnB8nCaaxE&callback=initMap"></script>
-	
-	<script src="assets/js/maps.js"></script>
 
+
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js"></script>
+	<script src="assets/js/maps.js"></script>
+	<script type="text/javascript" src="./assets/js/css3-animate-it.js"></script>
+	<script src="assets/js/sendEmail.js"></script>
 </body>
 
 </html>

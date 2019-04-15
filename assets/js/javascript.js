@@ -3,13 +3,18 @@ $(document).ready(function() {
 
   $('.tooltipped').tooltip();
 
-
+  $('.modal').modal();
   $('.slider').slider({
     height: 700,
-    indicators: false
+    indicators: false,
+    duration: 0.5
   });
-  $('.test').mouseenter(function() {
+  $('.shake').mouseenter(function() {
     $(this).effect("shake");
   });
+  
+      $(function() {
+        $('.lazy').Lazy();
+    });
 
 })
